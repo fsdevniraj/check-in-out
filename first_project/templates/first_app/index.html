@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check_In_Out</title>
+</head>
+<body>
+    <label for="sitecheck">
+        <span style="font-weight:bold; margin-top: inherit;">Items</span>
+    </label>
+    
+    <ol>
+      {% for i in Itemss %}
+      <li><input type="checkbox" >{{i.name}}</input></li>
+      {% endfor %}
+    </ol>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+
+</body>
+</html>
